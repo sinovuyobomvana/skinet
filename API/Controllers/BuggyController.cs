@@ -6,10 +6,10 @@ namespace API.Controllers
 {
     public class BuggyController : BaseApiController
     {
-        [HttpGet("Unauthorized")]
+        [HttpGet("unauthorized")]
         public IActionResult GetUnauthorized()
         {
-            return Unauthorized();
+            return Unauthorized("Unauthorized");
         }
         [HttpGet("badrequest")]
         public IActionResult GetBadRequest()
